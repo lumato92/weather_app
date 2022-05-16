@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App </title>
+</head>
+<body>
+
+    <label for="city">Elegi una Ciudad</label>
+    <select name="city" id="city">
+        <option value="BuenosAires">Buenos Aires </option>
+        <option value="Cordoba">Cordoba</option>
+        <option value="Rosario">Rosario</option>
+    </select>
+
+    <button type="submit" id="btn-location"> Enviar</button>
+    <div class="location-container">
+        <h2 class="city-location">Coordenadas</h2>
+        <h3>Latitud</h3><span id="lat-value"></span>
+        <h3>Longitud</h3><span id="lon-value"></span> <br>
+        <button id="btn-weather">Pronostico</button>
+    </div>
+    <script src="./scripts/request.js"></script>
+</body>
+</html>
+
