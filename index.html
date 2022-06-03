@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App </title>
 </head>
 <body>
 
-    <label for="city">Elegi una Ciudad</label>
-    <select name="city" id="city">
-        <option value="BuenosAires">Buenos Aires </option>
-        <option value="Cordoba">Cordoba</option>
-        <option value="Rosario">Rosario</option>
-    </select>
+    <h1 class="main-title">Weather APP</h1>
 
-    <button type="submit" id="btn-location"> Enviar</button>
+    <div class="search-container">
+        <input type="text" id="city-search" class="search-text" placeholder="Ingrese la ciudad">
+        <button class="btn-search" id="searchID" >Buscar</button>
+    </div>
+
+
     <div class="location-container">
-        <h2 class="city-location">Coordenadas</h2>
-        <h3>Latitud</h3><span id="lat-value"></span>
-        <h3>Longitud</h3><span id="lon-value"></span> <br>
-        <button id="btn-weather">Pronostico</button>
+        <h2 class="city-title" id="city-name">Nombre Ciudad</h2>
+        <div class="stat-icon" id="stat-icon"></div>
+        <h3 class="description" id="info-descr">Descripcion</h3>
+        <h3 class="temp-info">Temperatura <span id="cur-temp"></span> °C</h4>
+        <h4 class="temp-max" >Temp Max : <span id="max-temp">20</span> °C</h4>
+        <h4 class="temp-min" >Temp Min : <span id="min-temp"></span> °C</h4>    
+
     </div>
     <script src="./scripts/request.js"></script>
 </body>

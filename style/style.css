@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: #091f43;
+    font-family: sans-serif;
+
+}
+
+.main-title {
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 3rem;
+}
+
+.search-container{
+    text-align: center;
+    box-sizing: border-box;
+    
+    width: 50%;
+    height: 10vh;
+    margin: auto;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-text{
+    width: 70%;
+    height: 60%;
+    border-radius: 10px;
+    padding-left: 15px;
+
+}
+
+.btn-search{
+    width: 20%;
+    height: 6vh;
+    border-radius: 5px;
+}
+
+
+.location-container{
+    margin: auto;
+    margin-top: 4vh;
+    width: 50%;
+    height: fit-content;
+    border: 2px solid #f1f1f1;
+    border-radius: 12px;
+}
+
+.stat-icon{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #f1f1f1;
+    margin: auto;
+}
+
+.city-title{
+    text-align: center;
+    font-size: 30px;
+    color: #f1f1f1;
+}
+
+.description{
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.location-container h3 ,h4{
+    padding-left: 20px;
+    color: #f1f1f1;
+}
